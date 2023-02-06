@@ -1,0 +1,30 @@
+.container__projects {
+    .title {
+        margin: 4rem 0;
+    }
+
+    &-col {
+        margin-bottom: 2rem;
+    }
+
+    &-card {
+        height: 15rem;
+        background-position: center;
+        background-size: cover; //Se adapte al contenido de la caja
+        background-repeat: no-repeat;
+    }
+
+    &-button {
+        width: 100%;
+        text-transform: uppercase;
+    }
+}
+
+.title__card, .title {
+    font-weight: bold;
+
+    &-description {
+        text-align: justify;
+
+    }
+}

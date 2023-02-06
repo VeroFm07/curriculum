@@ -1,0 +1,28 @@
+.menu {
+    position: relative;
+    z-index: 10; //Nada se ponga por encima de él
+
+    &__ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0;
+    }
+
+    &__li {
+        padding: 3rem 2rem;
+        font-weight: bold;
+
+        &__link{
+            color: #fff;
+            font-size: 1.5rem;
+            text-decoration: none;
+
+            &:hover{
+                color: #5fc903;
+                border-bottom: .2rem solid rgb(17, 180, 169);
+            }
+        }
+    }
+
+}

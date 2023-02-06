@@ -1,0 +1,24 @@
+.container__list{
+    .skillbar{
+        width: 48%;
+        display:inline-block;
+        margin-right: 1rem;
+        background: rgba(222, 222, 222) !important;
+        font-size: 1.2rem;
+
+        &:nth-child(2n){ //Por cada 2 items asigne los estilos
+            margin-left: 20px;
+            margin-right: 0;
+        }
+
+        &-title{
+            font-size: 1rem;
+        }
+       
+        &-percent{
+            color: black;
+            font-weight: bold;
+            font-size: 1rem; 
+        }
+    }
+}

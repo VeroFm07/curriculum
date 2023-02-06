@@ -1,0 +1,11 @@
+.container__skills{
+
+    &-block{
+        margin-top: 5rem;
+
+        >h2{ //Primer h2 que encuentre dentro del contenedor
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+    }
+}

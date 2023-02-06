@@ -1,0 +1,84 @@
+.profile{
+    position: relative;
+    top: -8.4rem;
+    width: 100%;
+    z-index: 0; //La imagen se pone debajo del menú
+
+    &__fondo{
+        background-image: url('../../images/fondo.jpg');
+        background-position: top;
+        background-size: cover; //Ocupe todo el contenido
+        width: 100%;
+        height: 40rem;
+    }
+  
+    &__dark{
+        width: 100%;
+        height: 8rem;
+        background-color: rgba(18, 78, 199, 0.582);
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.7;
+    }
+}
+
+.box{
+    position: relative;
+    margin-top: -20rem;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px 0px rgba(54, 199, 225, 0.75);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(54, 199, 225, 0.75); //Para todos los navegadores
+    -moz-box-shadow: 0px 0px 15px 0px rgba(54, 199, 225, 0.75); //Mozilla
+    
+    &__info{
+        padding: 5rem;
+    }
+
+    &__data{
+        display: flex;
+        flex-direction: column;
+        
+        >span{ //Se le indica que el primer span que encuentre le asigne esos estilos
+            background-color: rgb(78, 138, 234);
+            width: 10%;
+            padding: .5rem;
+            border-radius: .5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        >p:first-of-type { //Se le indica que el primer elemento p que encuentre le asigne estilos
+            //Se le indica que sea el primer elemento porque o sino toma todos los p que existan
+            margin: 1rem 0 0 0;
+            font-weight: 600;
+            font-size: 2rem;
+        }
+
+        .title__ocupation{
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+
+        .box__data__information{
+            &-item{
+                display: flex;
+
+                p {
+                    &:first-of-type{
+                        width: 30%;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        color: rgb(78, 138, 234);
+                    }
+                    &:last-of-type{
+                        width: 70%;
+                        color:#a2a2a2;
+                    }
+                }
+                
+            }
+        }
+    }
+}
